@@ -19,7 +19,8 @@ A simple calculator built with HTML, CSS, and JavaScript.
 - **[View Code](https://github.com/username/JS-Mini-Project/blob/main/Calculator/index.html)**
 - **[Live Demo](https://username.github.io/JS-Mini-Project/Calculator/index.html)**
 
-![Calculator](https://via.placeholder.com/300x150.png?text=Calculator)
+![Calculator](Calculator/images/calculator-ss.png)
+
 
 ### Project 2: To-Do List
 
@@ -28,7 +29,7 @@ A to-do list application to keep track of tasks.
 - **[View Code](https://github.com/username/JS-Mini-Project/blob/main/To-Do%20List/index.html)**
 - **[Live Demo](https://username.github.io/JS-Mini-Project/To-Do%20List/index.html)**
 
-![To-do List](https://via.placeholder.com/300x150.png?text=Calculator)
+![To-do List](https://via.placeholder.com/300x150.png?text=To-do List)
 
 ## Instructions
 
