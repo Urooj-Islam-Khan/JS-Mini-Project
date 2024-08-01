@@ -14,7 +14,11 @@ Learn more about JavaScript on [MDN Web Docs](https://developer.mozilla.org/en-U
 
 ### Project 1: Calculator
 
-A simple calculator built with HTML, CSS, and JavaScript.
+The "Calculator" folder contains a Neomorphism Calculatorn with its associated file.
+
+### Files and Folders
+
+- **`index.html`**: The main HTML file for the to-do list application.
 
 - **[View Code](https://github.com/Urooj-Islam-Khan/JS-Mini-Project/blob/main/Calculator/index.html)**
 - **[Live Demo](https://Urooj-Islam-Khan.github.io/JS-Mini-Project/Calculator/index.html)**
@@ -55,16 +59,17 @@ To run these projects locally, follow these steps:
 1. **Clone the Repository**
    ```bash
    git clone https://github.com/username/JS-Mini-Project.git
-Contributing
+   
+## Contributing
 We welcome contributions to improve and expand the projects! If you'd like to contribute, please read our contributing guide and follow the steps outlined.
 
 ## Contact
 Feel free to reach out with any questions or feedback:
 
-Email: uroojislamkhan124@gmail.com
+**Email:** uroojislamkhan124@gmail.com
 
-Instagram: @the_coding_room
+**Instagram**: @the_coding_room
 
-LinkedIn: Urooj Islam
+**LinkedIn:** Urooj Islam
 
 GitHub: Urooj-Islam-Khan
