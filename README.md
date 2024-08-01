@@ -16,8 +16,8 @@ Learn more about JavaScript on [MDN Web Docs](https://developer.mozilla.org/en-U
 
 A simple calculator built with HTML, CSS, and JavaScript.
 
-- **[View Code](https://github.com/username/JS-Mini-Project/blob/main/Calculator/index.html)**
-- **[Live Demo](https://username.github.io/JS-Mini-Project/Calculator/index.html)**
+- **[View Code](https://github.com/Urooj-Islam-Khan/JS-Mini-Project/blob/main/Calculator/index.html)**
+- **[Live Demo](https://Urooj-Islam-Khan.github.io/JS-Mini-Project/Calculator/index.html)**
 
 ![Calculator](Calculator/images/calculator-ss.png)
 
@@ -26,10 +26,27 @@ A simple calculator built with HTML, CSS, and JavaScript.
 
 A to-do list application to keep track of tasks.
 
-- **[View Code](https://github.com/username/JS-Mini-Project/blob/main/To-Do%20List/index.html)**
-- **[Live Demo](https://username.github.io/JS-Mini-Project/To-Do%20List/index.html)**
+## To-Do List
 
-![To-do List](https://via.placeholder.com/300x150.png?text=To-do List)
+The "To-Do List" folder contains a simple to-do list application with its associated files.
+
+### Files and Folders
+
+- **`index.html`**: The main HTML file for the to-do list application.
+- **`style.css`**: The CSS file that styles the to-do list application.
+- **`script.js`**: The JavaScript file that adds functionality to the to-do list application.
+- **`images/`**: A folder containing images used in the application.
+
+### View and Live Demo
+
+- **[View Code](https://github.com/Urooj-Islam-Khan/JS-Mini-Project/blob/main/To-Do%20List/index.html)**
+- **[Live Demo](https://Urooj-Islam-Khan.github.io/JS-Mini-Project/To-Do%20List/index.html)**
+
+### Screenshot
+
+![To-do List](To-Do%20List/images/To-Do-List.png)
+
+### Folder Structure
 
 ## Instructions
 
