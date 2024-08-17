@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="/bootstrap-4.0.0-dist/css/bootstrap.min.css"> -->
+    <title>Image Slider</title>
+    <style>
+        /* image slidder  */
+
+        :root {
+            /* Light Theme Variables */
+            --primary-color: #d4eaf7;
+            /* Main primary color */
+            --secondary-color: #b6ccd8;
+            /* Secondary color */
+            --primary-text-color: #1d1c1c;
+            /* Primary text color */
+            --secondary-text-color: #00668c;
+            /* Secondary text color */
+            --accent-color: #0882f4;
+            /* Accent color, used for highlights */
+            --button: #02a3cf;
+            /* Button color */
+            --link-color: #3b3c3d;
+            /* Link color */
+            --card-bg: #cccbc8;
+            /* Card background color */
+            --background-color: #f5f4f1;
+            /* Main background color */
+            --background-secondary-color: #fffefb;
+            /* Secondary background color */
+            --border-color: #313d44;
+            /* Border color */
+
+            /* Font sizes for various elements, defined with rem for scalability */
+            --font-size-1: 1.563rem;
+            /* Largest font size */
+            --font-size-2: 1.375rem;
+            --font-size-3: 1.25rem;
+            --font-size-4: 1.125rem;
+            --font-size-5: 1rem;
+            --font-size-6: 0.938rem;
+            --font-size-7: 0.875rem;
+            --font-size-8: 0.813rem;
+            --font-size-9: 0.75rem;
+            --font-size-10: 0.688rem;
+            --font-size-11: 0.625rem;
+            /* Smallest font size */
+
+            /* Border radius for buttons and elements */
+            --border-radius-md: 10px;
+            /* Medium border radius */
+            --border-radius-sm: 5px;
+            /* Small border radius */
+
+            /* Transition timing for smooth animations */
+            --transition-timing: 0.2s ease;
+            /* Default transition timing */
+        }
+
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Container to hold the background video */
+        .container {
+            position: relative;
+
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        h1 {
+            background: rgba(255, 255, 255, 0.205);
+            font-size: 2rem;
+            padding: 4rem;
+            margin: 0;
+        }
+
+        /* Video Background */
+        .container video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+            /* Ensures the video covers the container without distortion */
+        }
+
+        /* Content Styling */
+        .banner {
+            margin: 0;
+            height: 100vh;
+            background: rgba(255, 255, 255, 0.205);
+            position: relative;
+            bottom: .6rem;
+        }
+
+        .banner,
+        .img-slider {
+            margin: 0;
+            position: relative;
+            z-index: 1;
+            /* Ensures content appears above the video */
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            color: white;
+            /* Adjust color for visibility over the video */
+        }
+
+        /* Image Slider Styling */
+        .img-slider {
+            position: relative;
+            width: 80%;
+            height: 300px;
+            top: 5rem;
+            margin: 10px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .img-slider .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            clip-path: circle(0% at 0 50%);
+            transition: 2s clip-path;
+        }
+
+        .img-slider .slide.active {
+            clip-path: circle(150% at 0 50%);
+        }
+
+        .img-slider .slide img {
+            width: 100%;
+            height: 100%;
+            border-radius: var(--border-radius-sm);
+        }
+
+        .img-slider .slider-buttons {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            bottom: 0px;
+        }
+
+        .img-slider .slider-buttons .slibtn {
+            background: var(--border-color);
+            width: 12px;
+            height: 12px;
+            margin: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .img-slider .slider-buttons .slibtn.active {
+            background: var(--background-secondary-color);
+            box-shadow: 0 0 2px hsla(0, 0%, 0%, 0.5);
+        }
+
+        /* Responsive Media Queries */
+        @media only screen and (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .img-slider {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <video autoplay muted loop id="bg-video">
+            <source src="images/bg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h1>Image Slider</h1>
+        <div class="wrapper banner">
+            <!-- slider start  -->
+
+            <div class="img-slider carousel-container">
+
+                <div class="slide carousel active">
+                    <img class="img-fluid" src="images/slide2.png" alt="">
+
+                </div>
+
+                <div class="slide carousel">
+                    <img class="img-fluid" src="images/slide1.png" alt="">
+
+                </div>
+
+                <div class="slide carousel">
+                    <img class="img-fluid" src="images/slide3.png" alt="">
+                </div>
+
+                <div class="slide carousel">
+                    <img class="img-fluid" src="images/slide4.png" alt="">
+                </div>
+
+                <div class="slide carousel">
+                    <img class="img-fluid" src="images/slide5.png" alt="">
+                </div>
+
+                <div class="slider-buttons">
+                    <div class="slibtn active"></div>
+                    <div class="slibtn"></div>
+                    <div class="slibtn"></div>
+                    <div class="slibtn"></div>
+                    <div class="slibtn"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // image slider 
+        // Get all elements with the class 'slide' and store them in 'slides'
+        // Get all elements with the class 'slibtn' (slider buttons) and store them in 'sliderBtns'
+        const slides = document.querySelectorAll('.slide'),
+            sliderBtns = document.querySelectorAll('.slibtn');
+
+        // Set the starting slide to be the first one (slide 0, because array indices are zero-based)
+        let currentSlide = 0;
+
+        // Function to show the slide based on the index clicked
+        const manualNav = function (index) {
+            // Remove 'active' class from all slides and buttons
+            slides.forEach(slide => slide.classList.remove('active'));
+            sliderBtns.forEach(btn => btn.classList.remove('active'));
+
+            // Add 'active' class to the clicked slide and button
+            slides[index].classList.add('active');
+            sliderBtns[index].classList.add('active');
+
+            // Update the current slide index
+            currentSlide = index;
+        }
+
+        // When each button is clicked, show the corresponding slide
+        sliderBtns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                manualNav(i);
+            });
+        });
+
+        // Function to automatically change slides every 10 seconds
+        const auto = function () {
+            const autoslides = () => {
+                setTimeout(function () {
+                    // Remove 'active' class from the current slide and button
+                    slides[currentSlide].classList.remove('active');
+                    sliderBtns[currentSlide].classList.remove('active');
+
+                    // Move to the next slide
+                    currentSlide = (currentSlide + 1) % slides.length;
+
+                    // Add 'active' class to the next slide and button
+                    slides[currentSlide].classList.add('active');
+                    sliderBtns[currentSlide].classList.add('active');
+
+                    // Call the function again after 10 seconds
+                    autoslides();
+                }, 5000);
+            }
+            // Start the automatic slide change
+            autoslides();
+        }
+
+        // Start the automatic slide change
+        auto();
+
+    </script>
+</body>
+
+</html>
