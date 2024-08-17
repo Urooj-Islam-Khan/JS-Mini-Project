@@ -46,11 +46,32 @@ The "To-Do List" folder contains a simple to-do list application with its associ
 - **[View Code](https://github.com/Urooj-Islam-Khan/JS-Mini-Project/blob/main/To-Do%20List/index.html)**
 - **[Live Demo](https://Urooj-Islam-Khan.github.io/JS-Mini-Project/To-Do%20List/index.html)**
 
-### Screenshot
+### Output
 
 ![To-do List](To-Do%20List/images/To-Do-List.png)
 
-### Folder Structure
+### Project 3: Image Slider
+
+An auto and manual image slider project.
+
+## Image Slider
+
+The "image-slider" folder contains an image slider application with its associated files.
+
+### Files and Folders
+
+- **`index.html`**: The main HTML file for the image slider application.
+- **`assets/`**: A folder containing 5 images and 1 video used in the slider.
+
+### View and Live Demo
+
+- **[View Code](https://github.com/Urooj-Islam-Khan/JS-Mini_Project/blob/main/Image-Slider/index.html)**
+- **[Live Demo](https://Urooj-Islam-Khan.github.io/JS-Mini_Project/Image-Slider/index.html)**
+
+### Output Video
+[Watch Video](https://github.com/Urooj-Islam-Khan/JS-Mini_Project/blob/main/Image-Slider/image-slider.mp4)
+
+
 
 ## Instructions
 
