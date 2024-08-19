@@ -1,4 +1,4 @@
-# JavaScript Mini Projects
+# JavaScript Mini Projects By Urooj Islam
 
 Welcome to the **JavaScript Mini Projects** repository! This project showcases various mini-projects built using JavaScript, HTML, and CSS. Each project is designed to help you learn and practice different aspects of web development.
 
